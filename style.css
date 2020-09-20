@@ -99,6 +99,9 @@ p {
   border-radius: 50%;
   margin-right: 1.6rem;
 }
+.icons-wrapper {
+  position: relative;
+}
 .icon-share-wrapper {
   width: 32px;
   height: 32px;
@@ -106,6 +109,7 @@ p {
   border-radius: 50%;
   padding: 0.8rem 0 0 0.85rem;
   margin-bottom: 0.4rem;
+  cursor: pointer;
 }
 
 /* Desktop */
@@ -131,4 +135,53 @@ p {
   .user-wrapper {
     margin-top: 2rem;
   }
+  .social-media-icons {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+    background-color: var(--dark-grayish-blue);
+    width: 248px;
+    height: 67px;
+    padding: 1.8rem 3.6rem 1.8rem 3.7rem;
+    position: absolute;
+    top: -90px;
+    left: -102px;
+  }
+  .social-media-icons::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 45%;
+    margin-left: -5px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: var(--dark-grayish-blue) transparent transparent transparent;
+  }
+  .social-media-icons p {
+    color: var(--dark-desaturated-blue);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  .social-media-icons img {
+    height: 20px;
+    width: 20px;
+  }
+  /*  .icon-share-wrapper::after {
+    content: "share \f082  \f099  \f0d2";
+    font-family: "FontAwesome";
+    width: 284px;
+    height: 55px;
+
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: var(--dark-desaturated-blue);
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+    background-color: var(--dark-grayish-blue);
+  } */
 }

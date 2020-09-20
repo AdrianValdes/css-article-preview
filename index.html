@@ -11,7 +11,9 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script src="https://kit.fontawesome.com/3c09bcb51a.js"></script>
     <link rel="stylesheet" href="style.css" />
+
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
@@ -39,12 +41,20 @@
             <p class="user-name">Michelle Appleton</p>
             <p class="card-date">28 Jun 2020 Share</p>
           </div>
-          <div class="icon-share-wrapper">
-            <img
-              class="icon-share"
-              src="/images/icon-share.svg"
-              alt="icon share"
-            />
+          <div class="icons-wrapper">
+            <div class="social-media-icons" id="tooltip">
+              <p>share</p>
+              <img src="/images/icon-facebook.svg" alt="icon-facebook" />
+              <img src="/images/icon-twitter.svg" alt="icon-twitter" />
+              <img src="/images/icon-pinterest.svg" alt="icon-pinterest" />
+            </div>
+            <div class="icon-share-wrapper" id="btn">
+              <img
+                class="icon-share"
+                src="/images/icon-share.svg"
+                alt="icon share"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -55,5 +65,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
+    <script src="/script.js"></script>
   </body>
 </html>
