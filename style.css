@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+/* variables */
+:root {
+  font-size: 62.5%;
+  --dark-grayish-blue: #48556a;
+  --dark-desaturated-blue: #6d7f97;
+  --grayish-blue: #9eafc2;
+  --light-grayish-blue: #ecf2f8;
+}
+
+/* ==============
+   global styles
+   ============== 
+    */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--light-grayish-blue);
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* mobile first */
+
+/* ==============
+   typography
+   ============== 
+*/
+h6 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--dark-grayish-blue);
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+p {
+  line-height: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+.card-commentary {
+  color: var(--dark-desaturated-blue);
+  letter-spacing: 0.12px;
+  margin-top: 12px;
+}
+.user-name {
+  font-weight: 700;
+  color: var(--dark-grayish-blue);
+}
+.card-date {
+  color: var(--grayish-blue);
+}
+/* ==============
+   layouts
+   ============== 
+*/
+.card {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 40px 40px -10px rgb(201, 213, 225, 0.5);
+}
+.card-img-container {
+  width: 327px;
+  height: 200px;
+}
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.card-body {
+  padding: 0 3.2rem 2rem 3.2rem;
+  margin-top: 3.6rem;
+  width: 327px;
+}
+.user-wrapper {
+  display: flex;
+  margin-top: 3.2rem;
+}
+.user-wrapper .push-right {
+  margin-right: auto;
+}
+.user-avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 1.6rem;
+}
+.icon-share-wrapper {
+  width: 32px;
+  height: 32px;
+  background-color: var(--light-grayish-blue);
+  border-radius: 50%;
+  padding: 0.8rem 0 0 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Desktop */
+@media (min-width: 168px) {
+  h6 {
+    line-height: 28px;
+
+    font-size: 2rem;
+  }
+  .card {
+    width: 732px;
+    display: flex;
+  }
+  .card-body {
+    margin-top: 3.2rem;
+    width: 395px;
+    padding: 0 0 0 4rem;
+  }
+  .card-img-container {
+    width: 285px;
+    height: 280px;
+  }
+  .user-wrapper {
+    margin-top: 2rem;
+  }
+}
