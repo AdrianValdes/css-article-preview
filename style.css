@@ -102,6 +102,29 @@ p {
 .icons-wrapper {
   position: relative;
 }
+.social-media-icons {
+  visibility: hidden;
+  display: flex;
+
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+  background-color: var(--dark-grayish-blue);
+  width: 327px;
+  height: 64px;
+  padding: 2.2rem 3.6rem 2.2rem 3.2rem;
+  position: absolute;
+  bottom: -18px;
+  right: -33px;
+}
+.social-media-icons p {
+  color: var(--dark-desaturated-blue);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.social-media-icons img {
+  margin: 0 1rem;
+}
 .icon-share-wrapper {
   width: 32px;
   height: 32px;
@@ -110,10 +133,13 @@ p {
   padding: 0.8rem 0 0 0.85rem;
   margin-bottom: 0.4rem;
   cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 3px;
 }
 
 /* Desktop */
-@media (min-width: 168px) {
+@media (min-width: 768px) {
   h6 {
     line-height: 28px;
 
@@ -160,11 +186,7 @@ p {
     border-style: solid;
     border-color: var(--dark-grayish-blue) transparent transparent transparent;
   }
-  .social-media-icons p {
-    color: var(--dark-desaturated-blue);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-  }
+
   .social-media-icons img {
     height: 20px;
     width: 20px;
